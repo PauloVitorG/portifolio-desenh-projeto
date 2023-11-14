@@ -45,47 +45,48 @@
         <h2>Prices</h2>
         <section class="prices">
             
-            <div class="container">
-                <div class="center">
-                    <div class="card1">
-                        <h3>Full Body</h3>
-                        <img src=" " alt="">
-                    </div>
-                </div>
-                <div class="center">
-                    <div class="card2">
-                        <h4>Sketch</h4>
-                        <p class="price">R$ 10,00</p>
-                        <p class="price">U$ 5,00</p>
-                        <h4>Flat Colors</h4>
-                        <p class="price">R$ 15,00</p>
-                        <p class="price">U$ 10,00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="center">
-                    <div class="card1">
-                        <h3>Full Body</h3>
-                        <img src=" " alt="">
-                    </div>
-                </div>
-                <div class="center">
-                    <div class="card2">
-                        <h4>Sketch</h4>
-                        <p class="price">R$ 10,00</p>
-                        <p class="price">U$ 5,00</p>
-                        <h4>Flat Colors</h4>
-                        <p class="price">R$ 15,00</p>
-                        <p class="price">U$ 10,00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
+            <div class="container" onclick="mostrar()">
                 <div class="center">
                     <div class="card1">
                         <h3>Full Body</h3>
                         <img src="/images/background-image.jpg" alt="">
+                    </div>
+                </div>
+                <div class="center">
+                    <div class="card2">
+                        <h4>Sketch</h4>
+                        <p class="price">R$ 10,00</p>
+                        <p class="price">U$ 5,00</p>
+                        <h4>Flat Colors</h4>
+                        <p class="price">R$ 15,00</p>
+                        <p class="price">U$ 10,00</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="center">
+                    <div class="card1">
+                        <h3>Full Body</h3>
+                        <img src=" " alt="">
+                    </div>
+                </div>
+                <div class="center">
+                    <div class="card2">
+                        <h4>Sketch</h4>
+                        <p class="price">R$ 10,00</p>
+                        <p class="price">U$ 5,00</p>
+                        <h4>Flat Colors</h4>
+                        <p class="price">R$ 15,00</p>
+                        <p class="price">U$ 10,00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="center">
+                    <div class="card1">
+                        <h3>Full Body</h3>
+                        <img src=" " alt="">
                     </div>
                 </div>
                 <div class="center">
@@ -159,7 +160,7 @@
                 <div class="center">
                     <div class="card1">
                         <h3>Full Body</h3>
-                        <img src=" " alt="">
+                        <img src="" alt="">
                     </div>
                 </div>
                 <div class="center">
@@ -177,7 +178,7 @@
                 <div class="center">
                     <div class="card1">
                         <h3>Full Body</h3>
-                        <img src="/images/background-image.jpg" alt="">
+                        <img src="" alt="">
                     </div>
                 </div>
                 <div class="center">
@@ -233,5 +234,28 @@
     <footer>
         <a href="#" id="back"></a>
     </footer>
+    
+
+    
+
+    <dialog class="dialog">
+        <input type="button" value="fechar" onclick="fecha()">
+        <img src="images/background-image.jpg" alt="">
+
+    </dialog>
+    <script>
+
+        var botao = document.querySelectorAll(".price");
+        var modal = document.querySelector(".dialog");
+
+        function mostrar() {
+            modal.showModal()
+        }
+
+        function fecha() {
+            modal.close()
+        }
+    </script>
 </body>
+
 </html>

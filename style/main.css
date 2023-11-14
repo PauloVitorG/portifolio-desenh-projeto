@@ -7,9 +7,11 @@
 body {
     
     background-image: linear-gradient(to bottom, rgb(224, 224, 224), rgb(243, 242, 242));
+
 }
 
 ul {
+
     color: white;
     display: flex;
     justify-content: space-evenly;
@@ -49,23 +51,28 @@ a:hover{
 }
 
 #info h1 {
+
     font-size: 3em;
     
 }
 
 #content {
-    
+
     height: 200px;
+
 }
 
 .prices {
+
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     height: 600px;
+
 }
 
 .container {
+
     background-color: white;
     height: 500px;
     width: 250px;
@@ -76,6 +83,7 @@ a:hover{
 }
 
 .container:hover {
+
     transform: scale(1.1);
     transition: .2s;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
@@ -83,48 +91,62 @@ a:hover{
 } 
 
 .card1, .card2 {
+
     width: 100%;
     text-align: center;
+
 }
 
 .card2 {
+
     background-color: rgb(223, 238, 221);
     border-radius: 5px;
     height: 100%;
     width: 100%;
+    
 }
 
 .center {
+
     height: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 h3, h4 {
+
     padding: 5px;
     font-size: 1.5em;
+
 }
 
 
 
 .price {
+
     font-size: 1.3em;
     background-color: rgb(181, 207, 177);
     margin: 0px auto 5px auto;
     width: 100px;
     padding: 1px;
     border-radius: 5px;
+
 }
 
 .box > img {
+
     width: 400px;
+
 }
 
 .prices img {
+
     width: 100%;
     height: 200px;
     transition: .2s;
+
 }
 
 
@@ -139,6 +161,7 @@ h3, h4 {
 }
 
 main h2 {
+
     text-align: center;
     font-size: 2em;
     padding: 20px;
@@ -146,25 +169,25 @@ main h2 {
 }
 
 .content {
+
     background-color: white;
     width: 800px;
     height: 300px;
     display: flex;
     align-items: center;
-    
-    
 
 }
 
 .content p {
+
     padding: 10px 100px;
     font-size: 1.4em;
     color: rgb(88, 197, 164);
 
-    
 }
 
 #back {
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -176,14 +199,41 @@ main h2 {
     background-color: rgba(216, 71, 27, 0.849);
     text-decoration: none;
     border-radius: 50%;
+
 }
 #back::after {
+
     content: "↑";
     font-size: 32px;
     font-weight: bold;
     color: aliceblue;
     transition: margin-top 250ms;
+
 }
+
 #back:hover::after {
+
     margin-top:-8px;
+
+}
+
+.dialog {
+    transition: 0.2s;
+    width: 700px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    background-color: rgba(240, 248, 255, 0);
+    
+
+}
+
+.dialog img {
+    width: 100%;
+}
+
+dialog::backdrop {
+    background-color: rgb(0, 0, 0, .6);
 }
